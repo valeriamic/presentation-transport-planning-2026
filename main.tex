@@ -6,7 +6,7 @@
 \usepackage{graphicx}
 \usepackage{xspace}
 \usepackage{psfrag}
-\usepackage{hyperref}
+ \usepackage{hyperref}
 \usepackage[normalem]{ulem}
 
 \beamertemplatenavigationsymbolsempty
@@ -47,24 +47,80 @@
 \let\varsigma\sigma                                                                            
 \DeclareMathSymbol{\varphi}{\mathord}{greek}{"27}
 
-\title{Казуистические основы формалировки заголовков презентаций в~академических традициях Сибири}
-\author{Томский~А.~Б.}
+\title{Разработка интеллектуального ассистента для~планирования путешествий}
+\author{Мицкевич Валерия Олеговна}
 \date{\today}
 
 \begin{document}
 \maketitle
 
 \begin{frame}
-\frametitle{ТГУ}
-\framesubtitle{Томский государственный университет}
+\frametitle{Актуальность работы}
+\framesubtitle{Проблематика, объект и предмет  исследования}
+
+Интеллектуальные ассистенты значительно упрощают процесс планирования поездок, предоставляя актуальную информацию о~погоде,
+транспорте, местах отдыха и отелях.
+Они могут автоматически составлять маршруты, учитывая пожелания пользователя, сформулированные в~его запросе.
+Это экономит время и силы, а~также позволяет избежать стресса при~организации путешествия.
+
+{\bf Объект исследования:} механизм tools calling для~связи языковой модели и интернет-сервисов.
+
+{\bf Предмет исследования: } выполнение запросов к~интернет-сервисам при~помощи языковых моделей.
 \end{frame}
 
 \begin{frame}
-\frametitle{UML}
-\framesubtitle{Пример диаграммы UML}
+\frametitle{Цель и задачи}
+
+{\bf Цель:} разработать интеллектуальный ассистент в~предметной области организации путешествий для~обработки запросов пользователя, сформулированных на~естественном языке.
+
+{\bf Задачи:}
+
+\begin{enumerate}
+\item {Организация взаимодействия с~интернет-сервисами для~получения информации о~погоде и планирования поездки.}
+\item {Организация взаимодействия с~языковой моделью с~использованием технологии tools calling.}
+\item {Тестирование и оценка полученных результатов.}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Обработка запроса}
+\framesubtitle{последовательность обмена информацией для~получения ответа}
 \begin{figure}[h]
-\includegraphics[width=9cm,height=5cm,keepaspectratio]{demo-uml.pdf}
+\includegraphics[width=9cm,height=5cm,keepaspectratio]{tools-seq.pdf}
 \end{figure}
 \end{frame}
+
+\begin{frame}
+\frametitle{Компоненты системы}
+\framesubtitle{Структура взаимодействия компонентов системы}
+\begin{figure}[h]
+\includegraphics[width=9cm,height=5cm,keepaspectratio]{service-comp.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Заключение}
+  \framesubtitle{Текущие результаты работы}
+
+  \begin{enumerate}
+  \item {
+Разработан интеллектуальный ассистент для~планирования поездок с~обработкой запросов на~естественном языке. 
+  }
+  \item {
+Организовано взаимодействие с~сервисами ....
+  }
+  \item {
+Работа ассистента протестирована на~проверочных примерах с~получением планируемого результата.
+    }
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+{\Large Спасибо за~внимание!}
+    \end{center}
+  \end{frame}
+
+
 
 \end{document}

@@ -1,0 +1,20 @@
+@startuml
+scale 2
+participant "Приложение" as a
+participant "Яндекс.Расписание" as s
+participant "YandexGPT" as m
+
+
+a -> m: "Запрос"
+activate m
+m -> u: "Вызов tool для обращение к сервису расписания"
+deactivate m
+u -> s: "Запрос операции планирования"
+activate s
+s -> a: "Результат выполнения запроса"
+deactivate s
+a -> m: "Повторный запрос с результатами выполнения операции"
+activate m
+m -> a: "Обработанный результат"
+deactivate m
+@enduml

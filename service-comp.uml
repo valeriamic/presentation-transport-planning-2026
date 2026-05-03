@@ -1,0 +1,11 @@
+@startuml
+scale 3
+component "Приложение" as app
+component "YandexGPT" as llm
+component "Погодный сервис" as weather
+component "Яндекс.Расписание" as sch
+
+a <--> llm
+a <--> sch
+a <--> weather
+@enduml
